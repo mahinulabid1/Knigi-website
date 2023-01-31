@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass -w ./app/scss/src:./app/scss/dist --style compressed",
-    "git-updated": "git add . && git commit -m 'updated' && git push origin main"
+    "gitUpdate": "git add . && git commit -m modifile_file && git push origin main"
   },
   "repository": {
     "type": "git",
