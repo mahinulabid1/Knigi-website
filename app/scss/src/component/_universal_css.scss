@@ -1,33 +1,21 @@
+@import "./variables&functions";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .center-horizontally{
-    left: 50%;
-    -o-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    @include centering(50%, horizontal_);
 }
 .center-vertically{
-    top: 50%;
-    -o-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    @include centering(50%, vertical_);
 }
 .center-middle{
-    top: 50%;
-    left: 50%;
-    -o-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    @include centering(50%, center_);
 }
+
 .transition{
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -35,21 +23,37 @@
     -ms-transition: all 0.4s;
     transition: all 0.4s;
 }
-a{
-    text-decoration: none;
-}
+
 
 body{
     font-family: 'Nunito', sans-serif;
+    
+
+    a{
+        text-decoration: none;
+    }
+
+    header{
+        overflow: hidden;
+    }
 }
 
 
 
-header{
-    overflow: hidden;
+
+.flex{
+    display: flex;
+    
+    &:s-b{
+        justify-content: space-between;
+    }
+    &:s-a{
+        justify-content: space-around;
+    }
+    &:s-e{
+        justify-content: space-evenly;
+    }
 }
-
-
 
 
 

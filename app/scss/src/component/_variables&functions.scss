@@ -1,0 +1,31 @@
+// VARIABLE
+
+
+// mixin
+@mixin centering($percent, $centering_spec){
+    @if $centering_spec == horizontal_{
+        left: $percent;
+        transform: translateX(- $percent);
+        -webkit-transform: translateX(- $percent);
+        -moz-transform: translateX(- $percent);
+        -ms-transform: translateX(- $percent);
+        transform: translateX(- $percent);
+    }
+    @else if $centering_spec == vertical_ {
+        top: $percent;
+        transform: translateY(- $percent);
+        -webkit-transform: translateY(- $percent);
+        -moz-transform: translateY(- $percent);
+        -ms-transform: translateY(- $percent);
+        transform: translateY(- $percent);
+    }
+    @else if $centering_spec == center_ {
+        top: $percent;
+        left: $percent;
+        transform: translate(- $percent);
+        -webkit-transform: translate(- $percent);
+        -moz-transform: translate(- $percent);
+        -ms-transform: translate(- $percent);
+        transform: translate(- $percent);
+    }
+}
