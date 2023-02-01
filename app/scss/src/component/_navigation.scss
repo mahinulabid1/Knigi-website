@@ -8,6 +8,7 @@ nav{
     @extend .bound-navigation, .flex-s-b-wrap, .flex, .flex-align-center;
     // line-height: 80px;
     background: white;
+    height: 100px;
 
     a{
         &:link, 
@@ -28,8 +29,9 @@ nav{
 }
 
 .dekstop-ham-container{
-    height: 80px;
-    width: 60px;
+    // padding: 50px;
+    // width: 50px;
+    margin-top:-6px;
 
     .dekstop-ham-relative{
         position:relative;
