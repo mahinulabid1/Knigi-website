@@ -68,8 +68,10 @@ body{
     &-s-e{
         justify-content: space-evenly;
     }
-    &-s-b-wrap{
-        justify-content: space-between;
+    &-cen{
+        justify-content: center;
+    }
+    &-wrap{
         flex-wrap:wrap;
     }
     &-align-center{

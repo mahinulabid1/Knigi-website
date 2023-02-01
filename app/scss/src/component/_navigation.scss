@@ -5,10 +5,10 @@
 
 
 nav{
-    @extend .bound-navigation, .flex-s-b-wrap, .flex, .flex-align-center;
-    // line-height: 80px;
+    @extend .bound-navigation, .flex-wrap, .flex, .flex-align-center, .flex-s-b;
     background: white;
     height: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
 
     a{
         &:link, 
@@ -23,14 +23,14 @@ nav{
     }
 
     .shop-btn{
-        margin-left: 70px;
+        margin-left: 30px;
         cursor: pointer;
     }
 }
 
+
+
 .dekstop-ham-container{
-    // padding: 50px;
-    // width: 50px;
     margin-top:-6px;
 
     .dekstop-ham-relative{
@@ -49,20 +49,6 @@ nav{
             }
         }
     }
-}
-
-
-
-
-.dekstop-ham-container{
-    position: absolute;
-    height: 40px;
-    width:28px;
-}
-.dekstop-ham-relative{
-    position: relative;
-    // height: 100%;
-    width: 100%;
 }
 
 .cart-icon{

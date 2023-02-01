@@ -5,83 +5,61 @@
 @import "./component/keyframes_in_Javascript";
 @import "./component/style_responsive";
 @import "./component/universal_mediaQueries";
+@import "./component/variables&functions";
+
 
 header{
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+    h1{
+        font-size: 100px;
+        color: rgb(248, 248, 248);
+        text-shadow: 2px 2px 10px #0000004d;
+    }
 }
 
-/* header image flex */
+// HEADER IMAGE
 .header-image-container{
-    // height: 100%;
     height:1000px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @extend .flex, .flex-cen;
+    img{
+        width: 25%;
+        object-fit: cover;
+        &:not(:last-of-type){
+            margin-right:4%;
+        }
+    }
 }
-.header-image-img{
-    width: 400px;
-    object-fit: cover;
-    height: 100%;
-    opacity: 0.7;
-}
-.scroll-text-container{
-    position:absolute;
-    top: 50%;
-    right: 0;
-    width: 200px;
-    -o-transform: rotateZ(270deg);
-    -webkit-transform: rotateZ(270deg);
-    -moz-transform: rotateZ(270deg);
-    -ms-transform: rotateZ(270deg);
-    transform: rotateZ(270deg);
-    padding: 0 10px;
-    font-size: 20px;
-    overflow: hidden;
-}
-.scroll-text{
-    animation:scrollDownText 3s linear infinite;
-    animation-timing-function: cubic-bezier(.11,.77,.9,.53);
-    -webkit-animation:scrollDownText 3s linear infinite;
-}
+
+// HERO TEXT STYLES
 .hero-text-container{
     position: absolute;
-    width: 50%;
+    width: 1200px;
     text-align: center;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    color: rgb(174, 132, 93);
+    @include centering(50%, center_);
+
+    a{
+        position: absolute;
+        line-height: 60px;
+        width: 150px;
+        display: block;
+        margin-top: 20px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.445);
+        border-radius: 10px;
+        @include centering(50%, horizontal_);
+
+        &:link, 
+        &:visited{
+            background: white;
+            color: black;
+        }
+        &:hover,
+        &:active{
+            background: black;
+            color: white;
+        }
+    }
 }
-.header-hero-h1{
-    letter-spacing: 5px;
-    font-size: 40px;
-}
-.hero-text-btn{
-    position: relative;
-}
-.hero-text-link-btn{
-    position: absolute;
-    line-height: 40px;
-    width: 150px;
-    display: block;
-    margin-top: 20px;
-}
-.hero-text-link-btn:link, 
-.hero-text-link-btn:visited{
-    color: white;
-    background: black;
-}
-.hero-text-link-btn:hover, 
-.hero-text-link-btn:active{
-    color: black;
-    background: white;
-}
+
+
 
 
 

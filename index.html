@@ -9,14 +9,6 @@
     <link rel="stylesheet" href="./app/scss/dist/style.css">
     <link rel="icon" href="./app/img/favicon.png">
 
-    <!-- <link rel="stylesheet" href="./app/css/UniversalStyles/universalCSSstyles.css"> -->
-    <!-- <link rel="stylesheet" href="./app/css/UniversalStyles/navigationInHeader.css"> -->
-    <!-- <link rel="stylesheet" href="./app/css/UniversalStyles/footerUniversal.css"> -->
-
-    <!-- <link rel="stylesheet" href="./vendor/css/jsFunctionStyle.css"> -->
-    <!-- <link rel="stylesheet" href="./vendor/css/keyframesInJavascript.css"> -->
-    <!-- <link rel="stylesheet" href="./app/css/styleResponsive.css"> -->
-    <!-- <link rel="stylesheet" href="./vendor/css/universalMediaqueries.css"> -->
     <!-- google web fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +19,7 @@
 <body>
     <header>
         <nav>
-            <div class="menu-flex-item">
+            <div class=" flex">
                 <div class="dekstop-ham-container">
                     <div class="dekstop-ham-relative">
                         <div></div>
@@ -38,10 +30,12 @@
                 </div>
                 <div class="shop-btn">SHOP <i class="fas fa-chevron-down shop-icon-down"></i></div>
             </div>
-            <div class="menu-flex-item">
+
+            <div>
                 <a title="Home Page" class="nav-logo" href="index.html">Knigi</a> 
             </div>
-            <div class="menu-flex-item">
+
+            <div>
                 <!-- search icon class" -->
                 <div class="search-icon"><i class="fas fa-search  search-icon-normal"></i> <i class="fas fa-times  search-icon-close"></i></div>
                 <div class="cart-btn cart-text-responsive">CART</div>
@@ -50,16 +44,16 @@
         </nav>
 
         <div class="header-image-container">
-            <div class="header-img header-img-1"><img class="header-image-img" src="./app/img/headerImg1.jpg" alt="books"></div>
-            <div class="header-img header-img-2"><img class="header-image-img" src="./app/img/headerImg2.jpg" alt="books"></div>
-            <div class="header-img header-img-3"><img class="header-image-img" src="./app/img/headerImg3.jpg" alt="books"></div>
+            <img src="./app/img/headerImg1.jpg" alt="books">
+            <img src="./app/img/headerImg2.jpg" alt="books">
+            <img src="./app/img/headerImg3.jpg" alt="books">
         </div>
+        
         <div class="hero-text-container">
-            <h1 class="header-hero-h1">Shop anywhere, anytime</h1>
-            <div class="hero-text-btn"><a class="hero-text-link-btn center-horizontally transition" href="./shopall.html">SHOP NOW</a></div>
+            <h1 class="header-hero-h1">Buy Books, Anywhere</h1>
+            <a class="hero-text-link-btn" href="./shopall.html">Shop Now</a>
         </div>
 
-        <div class="scroll-text-container"><div class="scroll-text"><i class="fas fa-arrow-left"></i> Scroll Down</div></div>
 
     </header>
 
