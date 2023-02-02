@@ -245,9 +245,6 @@ THEIR STORIES SECTION
     letter-spacing: 2px;
     cursor:pointer;
 }
-// .stories-main-item:hover{
-//     background-color: rgba(9, 255, 202, 0.164);
-// }
 
 
 /* blog posts */
@@ -264,147 +261,41 @@ THEIR STORIES SECTION
         &>div{
             width: 200px;
             margin-left: 10px;
-            img{
-                object-fit: cover; width: 100%;  
-            }
+            
         }
     }
 }
 
-// .blog-posts-item{
-  
-// }
-.blog-posts-header-text{
-    font-size: 15px;
+.blog-posts-item{
+    img{
+        object-fit: cover; width: 100%;  
+    }
+    &>div {
+        h4{
+            font-size: 17px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
 }
-.blog-posts-content{
-    font-size: 12px;
-}
+
 .visit-blog-btn{
     text-align: center;
     margin-top: 30px;
     font-size: 29px;
-    // font-weight: 600;
+    a{
+        &:link, 
+        &:visited{
+            color: rgb(29, 240, 117);
+            border-bottom: 1px solid rgb(29, 240, 117);
+        }
+        &:hover,
+        &:active{
+            border-bottom: 1px solid rgba(29, 240, 117, 0);
+            color: rgb(29, 240, 117);
+        }
+    }
 }
 
-.visit-blog-btn-link:link, .visit-blog-btn-link:visited{
-    color: rgb(29, 240, 117);
-    border-bottom: 1px solid rgb(29, 240, 117);
-}
-.visit-blog-btn-link:hover, .visit-blog-btn-link:active{
-    border-bottom: 1px solid rgba(29, 240, 117, 0);
-    color: rgb(29, 240, 117);
-}
 
-
-
-/* ==========
-CAUTION EVENT
-========== */
-// .caution{
-//     width: 100%;
-//     position: fixed;
-//     height: 300px;
-//     background: white;
-//     color: rgba(0, 0, 0, 0.596);
-//     font-size: 17px;
-//     text-align: center;
-//     z-index: 100;
-//     padding: 100px 200px;
-// }
-// .caution-btn{
-//     margin-top:30px;
-//     background: black;
-//     color: white;
-//     display: inline-block;
-//     padding: 10px 20px;
-//     cursor: pointer;
-// }
-
-/* ===========
-MEDIA QUERIES
-============== */
-/* BIG SCREEN FIX */
-// @media all and (min-width: 1700px){
-
-//     /* header section */
-//     .header-hero-h1{
-//         font-size: 60px;
-//     }
-//     .hero-text-link-btn{
-//         line-height: 60px;
-//         width: 190px;
-//         font-size: 20px;
-//     }
-
-//     /* design and travel section */
-//     .design-n-travel-p{
-//         font-size:60px;
-//     }
-//     .about-u-s-item:nth-of-type(2) {
-//         font-size: 20px;
-//     }
-
-//     /* their stories section */
-//     .their-stories-heading{
-//         font-size: 30px;
-//         margin-top: 70px;
-//     }
-//     .their-stories-menu-container {
-//         font-size: 18px;
-//     }
-//     .their-stories-menu:nth-of-type(1) {
-//         font-size: 16px;
-//     }
-//     .s-t-content-name{
-//         font-size: 16px;
-//     }
-//     .s-t-content-h3{
-//         font-size: 26px;
-//     }
-//     .s-t-content-para{ //class is not available
-//         font-size: 18px;
-//     }
-//     .s-t-content-date{
-//         font-size: 16px; 
-//     }
-//     .stories-main-item {
-//         width: 45%;
-//         height: 520px;
-//         margin: 0 15px 20px 0;
-//     }
-
-//     /* BLOG POSTS */
-//     .blog-posts-item {
-//         width: 300px;
-//     }
-//     .blog-posts-header-text{
-//         font-size: 20px;
-//     }
-//     .blog-posts-content{
-//         font-size: 16px;
-//     }
-//     .visit-blog-btn-link{
-//         font-size: 26px;
-//     }
-//     .visit-blog-btn{
-//         margin:40px 0 70px 0;
-//     }
-// }
-
-
-
-
-// /* NORMAL SCREEN */
-// @media all and (max-width: 900px){
-//     .caution{
-//         padding: 100px 50px;
-//     }
-// }
-
-// @media all and (max-width: 560px){
-//     .caution{
-//         padding: 100px 10px;
-//         height: 350px;
-//     }
-// }
