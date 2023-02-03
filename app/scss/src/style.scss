@@ -151,11 +151,10 @@ THEIR STORIES SECTION
             position: absolute;
             font-size: 30px;
             color: rgb(16, 255, 128);
-            
+            text-align:center;
+            @include centering(50%,center_);
             
             &>a{
-                position:absolute;
-                @include centering(50%, center_);
                 &:link,
                 &:visited{
                     color: rgb(16, 255, 128);

@@ -52,7 +52,6 @@ include "./pageComponent/_head.php";
         </div>
 
         <div class="stories-main-sec-container flex flex-wrap flex-s-b">
-            <!-- asassdsasdfsaasfdasddfsadasdffsdf -->
             <!-- 1 -->
             <div>
                 <div class="s-t-image-sec">
@@ -63,7 +62,7 @@ include "./pageComponent/_head.php";
                         </div>
                     </div>
                 </div>
-                <div class="s-t-content" style="color:red;">
+                <div class="s-t-content">
                     <h6>SHANTELL MARTIN <span>| ART</span></h6>
                     <a href="./stories.html">Well, ARE YOU?</a>
                     <p class="s-t-content-para">Artist and educator Shantell Martin uses her work to ask the ultimate question 
