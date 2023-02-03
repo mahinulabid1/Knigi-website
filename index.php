@@ -52,7 +52,7 @@ include "./pageComponent/_head.php";
         </div>
 
         <div class="stories-main-sec-container flex flex-wrap flex-s-b">
-            <!-- asassdsadfasdffsdf -->
+            <!-- asassdsasdfsadfsadasdffsdf -->
             <!-- 1 -->
             <div>
                 <div class="s-t-image-sec">
