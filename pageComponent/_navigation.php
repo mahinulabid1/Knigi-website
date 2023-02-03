@@ -8,11 +8,11 @@
             </div>
 
         </div>
-        <div class="shop-btn">SHOP <i class="fas fa-chevron-down shop-icon-down"></i></div>
+        <div class="shop-btn">SHOP</div>
     </div>
 
     <div>
-        <a title="Home Page" class="nav-logo" href="index.html">Knigi</a>
+        <a title="Home Page" class="nav-logo" href="index.php">Knigi</a>
     </div>
 
     <div>
@@ -123,7 +123,7 @@
 <!-- js event div -->
 <div class="nav-in-ham">
     <div class="nav-in-ham-content-container">
-        <a href="./allStories.html" class="nav-in-ham-content">STORIES</a>
+        <a href="./allStories.php" class="nav-in-ham-content">STORIES</a>
         <a href="./films.html" class="nav-in-ham-content">FILMS</a>
         <a href="./shopall.html" class="nav-in-ham-content">SHOP</a>
         <a href="./allBlogs.html" class="nav-in-ham-content">BLOG</a>
