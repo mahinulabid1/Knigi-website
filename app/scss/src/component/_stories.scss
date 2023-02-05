@@ -14,6 +14,7 @@ THEIR STORIES SECTION
         padding: 0 200px;
         font-weight: 700;
         font-size: 14px;
+        
         & > div{
             padding: 10px;
             border-bottom: 1px solid rgba(0, 0, 0, 0);
@@ -39,9 +40,11 @@ THEIR STORIES SECTION
 }
 
 .stories-main-sec-container{
-    padding: 0 200px;
+    // padding: 0 200px;
     margin-top: 40px;
-
+    // @include responsive(1250px){
+    //     padding: 0 50px;
+    // }
     
     & > div{ //selecting just the parent div not its child
         width: 45%;

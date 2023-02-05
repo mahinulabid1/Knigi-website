@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class="stories-main-sec-container flex flex-wrap flex-s-b">
+        <div class="stories-main-sec-container flex flex-wrap flex-s-b bound-padding">
             <!-- 1 -->
             <div>
                 <div class="s-t-image-sec">
