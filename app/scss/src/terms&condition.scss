@@ -1,8 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./component/footer";
+@import "./component/universal_css";
+@import "./component/navigation";
+@import "./component/js_function_Style";
+@import "./component/keyframes_in_Javascript";
+@import "./component/style_responsive";
+@import "./component/universal_mediaQueries";
+@import "./component/variables&functions";
+@import "./component/blogPost_summary";
+@import "./component/stories";
+
+
+
+
 .center-horizontally{
     left: 50%;
     transform: translateX(-50%);
@@ -27,13 +36,9 @@
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
 }
-a{
-    text-decoration: none;
-}
 
-/*
- section page 
-*/
+
+
 section{
     position: relative;
 }
@@ -102,16 +107,16 @@ RESPONSIVE MEDIA QUERIES
 /* NOTE THAT BIG SCREEN FIX IS AUTO SYNCED FROM THE FAQ.css file */
 
 /* collaborate */
-@media only screen and (max-width : 1001px){
-    .section-flex-container{
-        flex-direction: column;
-        padding: 0 30px;
-    }
-    .section-flex-item{
-        width: 100%;
-        margin-top: 70px;
-    }
-}
+// @media only screen and (max-width : 1001px){
+//     .section-flex-container{
+//         flex-direction: column;
+//         padding: 0 30px;
+//     }
+//     .section-flex-item{
+//         width: 100%;
+//         margin-top: 70px;
+//     }
+// }
 
 
 
