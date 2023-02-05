@@ -32,7 +32,7 @@ $text-black: rgb(32, 32, 32);
 
 
 //media queries
-@mixin reponsive($px){
+@mixin responsive($px){
     @media screen and (max-width:$px){
         @content;
     }

@@ -9,7 +9,9 @@ nav{
     background: white;
     height: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
-
+    @include responsive(1000px){
+        height: 70px;
+    }
     a{
         &:link, 
         &:visited,
@@ -20,6 +22,9 @@ nav{
     }
     .nav-logo{
         font-size: 40px;
+        @include responsive(1000px){
+            font-size: 30px;
+        }
     }
 
     .shop-btn{

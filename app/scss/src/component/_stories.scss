@@ -20,7 +20,10 @@ THEIR STORIES SECTION
         }
 
         a{
-            margin-right:30px;
+            &:not(:last-child){
+                margin-right:30px;
+            }
+            
             &:link,
             &:visited{
                 color:black;
