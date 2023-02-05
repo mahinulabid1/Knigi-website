@@ -124,11 +124,11 @@
 <div class="nav-in-ham">
     <div class="nav-in-ham-content-container">
         <a href="./allStories.php" class="nav-in-ham-content">STORIES</a>
-        <a href="./films.html" class="nav-in-ham-content">FILMS</a>
-        <a href="./shopall.html" class="nav-in-ham-content">SHOP</a>
+        <a href="./films.php" class="nav-in-ham-content">FILMS</a>
+        <a href="./shopall.php" class="nav-in-ham-content">SHOP</a>
         <a href="./allBlogs.php" class="nav-in-ham-content">BLOG</a>
-        <a href="./contactUs.html" class="nav-in-ham-content">ABOUT</a>
-        <a href="./contactUs.html" class="request-interview-btn">REQUEST INTERVIEW</a>
+        <a href="./contactUs.php" class="nav-in-ham-content">ABOUT</a>
+        <a href="./contactUs.php" class="request-interview-btn">REQUEST INTERVIEW</a>
     </div>
 </div>
 <!-- end -->
