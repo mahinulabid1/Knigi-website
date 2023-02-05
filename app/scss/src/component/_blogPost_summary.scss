@@ -1,3 +1,5 @@
+@import "./variables&functions";
+
 /* blog posts */
 .blog-posts{
     position: relative;
@@ -24,9 +26,15 @@
     &>div {
         h4{
             font-size: 17px;
+            @include responsive(1000px){
+                display:none;
+            }
         }
         p{
             font-size: 14px;
+            @include responsive(1000px){
+                display:none;
+            }
         }
     }
 }
