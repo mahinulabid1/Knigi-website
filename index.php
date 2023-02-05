@@ -6,7 +6,6 @@ include "./pageComponent/_head.php";
 ?>
 
 
-
 <body>
     <?php include "./pageComponent/_navigation.php"; ?>
     <header>
@@ -38,8 +37,7 @@ include "./pageComponent/_head.php";
 
     <?php 
         include "./pageComponent/_blogPost_summary.php" ;
-        include "./pageComponent/_footer.php";
-        
+        include "./pageComponent/_footer.php"; 
     ?>
     <script src="./app/js/script.js"></script>
 </body>
