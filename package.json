@@ -26,5 +26,8 @@
   "homepage": "https://github.com/mahinulabid1/Knigi-website#readme",
   "dependencies": {
     "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }
