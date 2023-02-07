@@ -1,6 +1,6 @@
 <section class="their-stories">
         <h4>THE STORIES</h4>
-        <div class="their-stories-menu-container flex flex-s-b">
+        <div class="their-stories-menu-container bound-padding flex flex-s-b">
             <div class="their-stories-menu">
                 <!-- empty div -->
             </div>

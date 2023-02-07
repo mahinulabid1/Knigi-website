@@ -1,5 +1,5 @@
 <nav>
-    <div class=" flex">
+    <div class="flex flex-align-center">
         <div class="dekstop-ham-container">
             <div class="dekstop-ham-relative">
                 <div></div>
@@ -8,18 +8,18 @@
             </div>
 
         </div>
-        <div class="shop-btn">SHOP</div>
+        <div class="shop-btn flex flex-align-center">SHOP <img src="./app/img/icons/arrowdown.png" alt="" height="20" width="20"></div>
     </div>
 
     <div>
         <a title="Home Page" class="nav-logo" href="index.php">Knigi</a>
     </div>
 
-    <div>
+    <div class="flex flex-s-b flex-align-center">
         <!-- search icon class" -->
-        <div class="search-icon"><i class="fas fa-search  search-icon-normal"></i> <i class="fas fa-times  search-icon-close"></i></div>
+        <div class="search-icon"><img src="./app/img/icons/search.png" alt="search anything" height="20" width="20"></div>
         <div class="cart-btn cart-text-responsive">CART</div>
-        <div class="cart-btn cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        <div class="cart-btn cart-icon"><img src="./app/img/icons/cart.png" alt="Shopping Cart" height="20" width="20"></div>
     </div>
 </nav>
 
