@@ -31,6 +31,24 @@ header{
         &:not(:last-of-type){
             margin-right:4%;
         }
+        @include responsive(1000px){
+            width: 30%;
+            &:not(:last-of-type){
+                margin-right:1%;
+            }
+        }
+        @include responsive(800px){
+            width: 48%;
+            &:nth-of-type(1){
+                display: none;
+            }
+        }
+        @include responsive(500px){
+            width: 98%;
+            &:nth-of-type(2){
+                display: none;
+            }
+        }
     }
 }
 
@@ -43,6 +61,13 @@ header{
     @include responsive(1200px){
         width: auto;
     }
+
+    h1{
+        @include responsive(500px){
+            font-size: 60px;
+        }
+    }
+    
     a{
         position: absolute;
         line-height: 60px;
@@ -79,11 +104,13 @@ ABOUT US SECTION
             font-style:italic;
             font-weight:300;
         }
+        @include responsive(1300px){
+            font-size: 50px;
+        }
     }
 
     div{
         width: 50%;
-        // height: 300px;
         padding: 100px 0;
         &:nth-of-type(1){
             text-align: center;
@@ -100,6 +127,31 @@ ABOUT US SECTION
         p{
             width: 80%; 
         }
+        @include responsive(1000px){
+            padding: 20px 0;
+            &:nth-of-type(1){
+                margin-top: 150px;
+                text-align:left;
+            }
+            &:nth-of-type(2){
+                margin-bottom: 150px;
+                margin-left: 10px;
+            }
+        }
+    }
+    
+    //wanted to extend the bound-padding but can't use extend in mediaqueries
+    @include responsive(1000px){
+        flex-direction:column;
+        padding: 0 40px;//cant use @extend in media queries  
+        div{
+            width: 100%;
+        }
+
+    }
+    @include responsive(500px){
+        flex-direction:column;
+        padding: 0 15px;
     }
 }
 

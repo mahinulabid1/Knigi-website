@@ -55,7 +55,10 @@ body{
     &-navigation{
         padding: 0 80px;
         @include responsive(1000px){
-            padding: 0 40px;
+            padding: 0 50px;
+        }
+        @include responsive(500px){
+            padding: 0 15px;
         }
     }
     &-padding{
@@ -65,6 +68,9 @@ body{
         }
         @include responsive(1000px){
             padding: 0 40px;
+        }
+        @include responsive(500px){
+            padding: 0 15px;
         }
     }
 }
