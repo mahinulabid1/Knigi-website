@@ -39,6 +39,6 @@ include "./pageComponent/_head.php";
         include "./pageComponent/_blogPost_summary.php" ;
         include "./pageComponent/_footer.php"; 
     ?>
-    <script src="./app/js/script.js"></script>
+    <script src="./app/typescript/dist/script.js"></script>
 </body>
 </html>

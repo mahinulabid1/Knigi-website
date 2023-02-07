@@ -121,7 +121,7 @@
 
 
 <!-- js event div -->
-<div class="nav-in-ham">
+<div class="nav-in-ham d-none">
     <div class="nav-in-ham-content-container">
         <a href="./allStories.php" class="nav-in-ham-content">STORIES</a>
         <a href="./films.php" class="nav-in-ham-content">FILMS</a>
@@ -129,6 +129,7 @@
         <a href="./allBlogs.php" class="nav-in-ham-content">BLOG</a>
         <a href="./contactUs.php" class="nav-in-ham-content">ABOUT</a>
         <a href="./contactUs.php" class="request-interview-btn">REQUEST INTERVIEW</a>
+        <button id="close-nav-in-ham">Close ham</button>
     </div>
 </div>
 <!-- end -->
