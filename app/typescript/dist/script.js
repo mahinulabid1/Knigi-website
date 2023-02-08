@@ -2,6 +2,7 @@
 let hambar = document.querySelector(".dekstop-ham-container");
 let mobile_navigation = document.querySelector(".nav-in-ham");
 let mobile_navClose = document.getElementById("close-nav-in-ham");
+let shopButton = document.querySelector(".shopBtn");
 let classAnimation = ["slideDown", "slideUp", "d-none"];
 hambar.addEventListener("click", () => {
     for (let i = 0; i < classAnimation.length; i++) {

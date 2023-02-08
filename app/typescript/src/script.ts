@@ -1,6 +1,7 @@
 let hambar:any = document.querySelector(".dekstop-ham-container");
 let mobile_navigation:any = document.querySelector(".nav-in-ham");
 let mobile_navClose:any = document.getElementById("close-nav-in-ham");
+let shopButton:any = document.querySelector(".shopBtn");
 
 // mobile navigation bar 
 
@@ -10,7 +11,6 @@ hambar.addEventListener("click", ()=>{
         mobile_navigation.classList.toggle(classAnimation[i]);
     }
 });
-
 mobile_navClose.addEventListener("click", ()=>{
     for(let i =0; i < classAnimation.length; i++){
         if(i==2){
@@ -22,6 +22,7 @@ mobile_navClose.addEventListener("click", ()=>{
         }
     }
 });
+
 
 
 
