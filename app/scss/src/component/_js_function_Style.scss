@@ -21,6 +21,24 @@ JS FUNCTIONS STYLE
     width: 100%;
     background: white;
     z-index: 50;
+
+    .ham-close-btn{
+        position:absolute;
+        top: 10%;
+        right: 10%;
+        cursor:pointer;
+        img{
+            background-color: rgba(0, 0, 0, 0.082);
+            border-radius: 50%;
+            padding: 10px;
+            box-sizing:initial;
+            @include responsive(500px){
+                height: 15px;
+                width: 15px;
+            }
+        }
+
+    }
 }
 .nav-in-ham-content-container{
     margin-top: 160px;

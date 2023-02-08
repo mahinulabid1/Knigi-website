@@ -129,7 +129,9 @@
         <a href="./allBlogs.php" class="nav-in-ham-content">BLOG</a>
         <a href="./contactUs.php" class="nav-in-ham-content">ABOUT</a>
         <a href="./contactUs.php" class="request-interview-btn">REQUEST INTERVIEW</a>
-        <button id="close-nav-in-ham">Close ham</button>
+        <div class="ham-close-btn" id="close-nav-in-ham">
+            <img src="./app/img/icons/close.png" alt="" height="20" width="20">
+        </div>
     </div>
 </div>
 <!-- end -->
