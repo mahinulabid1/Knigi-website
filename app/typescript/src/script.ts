@@ -43,7 +43,7 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
                     bookShopNav.classList.toggle(classAnimation[i]);
                 }
             }
-        }, 2000);
+        }, 700);
     });
 
     shopButton.addEventListener("mouseleave", () => {
@@ -51,16 +51,20 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
     });
 
     bookShopnavClose.addEventListener("mousedown", ()=>{
-        console.log("close the nav");
-        for (let i = 0; i < classAnimation.length; i++) {
-            if (i == 2) {
-                setTimeout(() => {
-                    bookShopNav.classList.toggle("d-none");
-                }, 370);
-            } else {
-                bookShopNav.classList.toggle(classAnimation[i]);
+        setTimeout(()=>{
+            if(navSwitch == false){
+                for (let i = 0; i < classAnimation.length; i++) {
+                    if (i == 2) {
+                        setTimeout(() => {
+                            bookShopNav.classList.toggle("d-none");
+                        }, 370);
+                    } else {
+                        bookShopNav.classList.toggle(classAnimation[i]);
+                    }
+                }
             }
-        }
+        },1000)
+        
     })
 
     
