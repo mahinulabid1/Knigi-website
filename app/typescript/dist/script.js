@@ -2,17 +2,22 @@
 let hambar = document.querySelector(".dekstop-ham-container");
 let mobile_navigation = document.querySelector(".nav-in-ham");
 let mobile_navClose = document.getElementById("close-nav-in-ham");
-mobile_navigation.classList.remove("d-none");
+let classAnimation = ["slideDown", "slideUp", "d-none"];
 hambar.addEventListener("click", () => {
-    mobile_navigation.classList.add("slideDown");
-    mobile_navigation.classList.remove("slideUp");
-    mobile_navigation.classList.remove("d-none");
+    for (let i = 0; i < classAnimation.length; i++) {
+        mobile_navigation.classList.toggle(classAnimation[i]);
+    }
 });
 mobile_navClose.addEventListener("click", () => {
-    mobile_navigation.classList.remove("slideDown");
-    mobile_navigation.classList.add("slideUp");
-    setTimeout(() => {
-        mobile_navigation.classList.add("d-none");
-    }, 370);
+    for (let i = 0; i < classAnimation.length; i++) {
+        if (i == 2) {
+            setTimeout(() => {
+                mobile_navigation.classList.toggle("d-none");
+            }, 370);
+        }
+        else {
+            mobile_navigation.classList.toggle(classAnimation[i]);
+        }
+    }
 });
 //# sourceMappingURL=script.js.map

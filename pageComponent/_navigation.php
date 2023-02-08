@@ -121,7 +121,7 @@
 
 
 <!-- js event div -->
-<div class="nav-in-ham d-none">
+<div class="nav-in-ham d-none slideUp">
     <div class="nav-in-ham-content-container">
         <a href="./allStories.php" class="nav-in-ham-content">STORIES</a>
         <a href="./films.php" class="nav-in-ham-content">FILMS</a>

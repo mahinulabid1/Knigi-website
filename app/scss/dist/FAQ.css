@@ -1,11 +1,11 @@
 /* Error: Undefined mixin.
  *    ,
- * 35 | /             @include responsive(500px){
- * 36 | |                 height: 15px;
- * 37 | |                 width: 15px;
- * 38 | \             }
+ * 38 | /             @include responsive(500px){
+ * 39 | |                 height: 15px;
+ * 40 | |                 width: 15px;
+ * 41 | \             }
  *    '
- *   app\scss\src\component\_js_function_Style.scss 35:13  @import
+ *   app\scss\src\component\_js_function_Style.scss 38:13  @import
  *   app\scss\src\FAQ.scss 1:9                             root stylesheet */
 
 body::before {
@@ -16,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 35 \2502  \250c              @include responsive(500px){\a 36 \2502  \2502                  height: 15px;\a 37 \2502  \2502                  width: 15px;\a 38 \2502  \2514              }\a    \2575 \a   app\\scss\\src\\component\\_js_function_Style.scss 35:13  @import\a   app\\scss\\src\\FAQ.scss 1:9                             root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 38 \2502  \250c              @include responsive(500px){\a 39 \2502  \2502                  height: 15px;\a 40 \2502  \2502                  width: 15px;\a 41 \2502  \2514              }\a    \2575 \a   app\\scss\\src\\component\\_js_function_Style.scss 38:13  @import\a   app\\scss\\src\\FAQ.scss 1:9                             root stylesheet";
 }
