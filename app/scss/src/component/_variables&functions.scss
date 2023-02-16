@@ -22,11 +22,11 @@ $text-black: rgb(32, 32, 32);
     @else if $centering_spec == center_ {
         top: $percent;
         left: $percent;
-        transform: translate(- $percent);
-        -webkit-transform: translate(- $percent);
-        -moz-transform: translate(- $percent);
-        -ms-transform: translate(- $percent);
-        transform: translate(- $percent);
+        transform: translate(- $percent, -$percent);
+        -webkit-transform: translate(- $percent, -$percent);
+        -moz-transform: translate(- $percent, -$percent);
+        -ms-transform: translate(- $percent, -$percent);
+        transform: translate(- $percent, -$percent);
     }
 }
 

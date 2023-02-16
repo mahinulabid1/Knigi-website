@@ -30,7 +30,7 @@
 
 <!-- navigation menu hidden items -->
 <!-- START -->
-<div class="book-shop-separate  slideUp">
+<div class="book-shop-separate d-none slideUp">
     <div class="bs-container flex flex-wrap flex-s-a">
         <a href="./productDescription.html" class="b-s-item">
             <div class="b-s-image-container">
