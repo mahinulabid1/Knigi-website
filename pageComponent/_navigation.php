@@ -30,12 +30,12 @@
 
 <!-- navigation menu hidden items -->
 <!-- START -->
-<div class="book-shop-separate d-none slideUp">
-    <div class="bs-container">
+<div class="book-shop-separate  slideUp">
+    <div class="bs-container flex flex-wrap flex-s-a">
         <a href="./productDescription.html" class="b-s-item">
             <div class="b-s-image-container">
-                <img class="center-middle" src="./app/img/product/individual/product1.jpg" alt="">
-                <div class="b-s-product-text-container center-middle">
+                <img class="" src="./app/img/product/individual/product1.jpg" alt="">
+                <div class="b-s-product-text-container">
                     <p class="b-s-product-text">Woven Issue Four</p>
                     <p class="b-s-product-text"><span class="discounted-regular-price">$18 USD</span><span class="discounted-price"> $9 USD</span> <span class="regular-price"></span></p>
                 </div>
@@ -44,8 +44,8 @@
         </a>
         <a href="./productDescription.html" class="b-s-item">
             <div class="b-s-image-container">
-                <img class="center-middle" src="./app/img/product/individual/product2.jpg" alt="">
-                <div class="b-s-product-text-container center-middle">
+                <img class="" src="./app/img/product/individual/product2.jpg" alt="">
+                <div class="b-s-product-text-container">
                     <p class="b-s-product-text">Earl of East London</p>
                     <p class="b-s-product-text"><span class="discounted-regular-price"></span><span class="discounted-price"></span> <span class="regular-price"> $24 USD</span></p>
                 </div>
@@ -54,8 +54,8 @@
         </a>
         <a href="./productDescription.html" class="b-s-item">
             <div class="b-s-image-container">
-                <img class="center-middle" src="./app/img/product/individual/product3.jpg" alt="">
-                <div class="b-s-product-text-container center-middle">
+                <img class="" src="./app/img/product/individual/product3.jpg" alt="">
+                <div class="b-s-product-text-container">
                     <p class="b-s-product-text">Earl of East London</p>
                     <p class="b-s-product-text"><span class="discounted-regular-price"></span><span class="discounted-price"></span> <span class="regular-price"> $14 USD</span></p>
                 </div>
@@ -64,8 +64,8 @@
         </a>
         <a href="./productDescription.html" class="b-s-item">
             <div class="b-s-image-container">
-                <img class="center-middle" src="./app/img/product/individual/product4.jpg" alt="">
-                <div class="b-s-product-text-container center-middle">
+                <img class="" src="./app/img/product/individual/product4.jpg" alt="">
+                <div class="b-s-product-text-container">
                     <p class="b-s-product-text">Earl of East London</p>
                     <p class="b-s-product-text"><span class="discounted-regular-price">$24 USD</span><span class="discounted-price">$12 USD</span> <span class="regular-price"> </span></p>
                 </div>
@@ -86,7 +86,7 @@
 
 
 <div class="search-display">
-    <div class="search-display-text-container center-middle">
+    <div class="search-display-text-container ">
         <form action="" class="serach-box-form">
             <div class="search-display-flex-container">
                 <input class="search-bar" type="text" placeholder="Search Woven + Hit Enter">

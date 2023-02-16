@@ -26,38 +26,42 @@ let classAnimation = ["slideDown", "slideUp", "d-none"];
     });
 })();
 (() => {
-    let navSwitch = false;
-    bookShopNav.addEventListener("mouseenter", () => {
-        navSwitch = true;
-    });
-    shopButton.addEventListener("mouseenter", () => {
-        navSwitch = true;
+    let duration = 0;
+    let selectorArr = [shopButton, bookShopnavClose];
+    let x;
+    for (let i = 0; i < selectorArr.length; i++) {
+        selectorArr[i].addEventListener("mouseenter", () => {
+            let eventEnterTime = Date.now();
+            x = setInterval(() => {
+                let eventDurationCounter = Date.now();
+                duration = eventDurationCounter - eventEnterTime;
+                console.log(duration);
+            }, 200);
+        });
+        selectorArr[i].addEventListener("mouseleave", () => {
+            clearInterval(x);
+            duration = 0;
+        });
+    }
+    selectorArr[0].addEventListener("mouseenter", () => {
         setTimeout(() => {
-            if (navSwitch == true) {
-                for (let i = 0; i < classAnimation.length; i++) {
-                    bookShopNav.classList.toggle(classAnimation[i]);
-                }
+            if (duration > 400) {
+                bookShopNav.classList.remove('d-none');
+                bookShopNav.classList.remove("slideUp");
+                bookShopNav.classList.add("slideDown");
             }
-        }, 700);
+        }, 500);
     });
-    shopButton.addEventListener("mouseleave", () => {
-        navSwitch = false;
-    });
-    bookShopnavClose.addEventListener("mousedown", () => {
+    selectorArr[1].addEventListener("mouseenter", () => {
         setTimeout(() => {
-            if (navSwitch == false) {
-                for (let i = 0; i < classAnimation.length; i++) {
-                    if (i == 2) {
-                        setTimeout(() => {
-                            bookShopNav.classList.toggle("d-none");
-                        }, 370);
-                    }
-                    else {
-                        bookShopNav.classList.toggle(classAnimation[i]);
-                    }
-                }
+            if (duration > 200) {
+                bookShopNav.classList.add("slideUp");
+                bookShopNav.classList.remove("slideDown");
+                setTimeout(() => {
+                    bookShopNav.classList.add('d-none');
+                }, 390);
             }
-        }, 1000);
+        }, 300);
     });
 })();
 //# sourceMappingURL=script.js.map
