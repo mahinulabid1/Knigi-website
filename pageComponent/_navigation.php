@@ -137,16 +137,20 @@
     <div class="items-in-cart-container">
         <!-- first static item in the cart -->
         <div>
-            <div class="items-cart-name">Woven Issue 4</div>
-            <div class="price-tag-cart">$ 20 USD</div>
-            <div class="flex flex-align-center"><img src="./app/img/icons/delete.png" alt="delete from the queue" height="20" width="20"></div>
+            <div>Woven Issue 4</div>
+            <div>$ 20 USD</div>
+            <div class="flex flex-align-center">
+                <img src="./app/img/icons/delete.png" alt="delete from the queue" height="20" width="20">
+            </div>
         </div>
 
         <!-- second static item in the cart -->
         <div>
-            <div class="items-cart-name">As you like it</div>
-            <div class="price-tag-cart">$ 15 USD</div>
-            <div class="flex flex-align-center"><img src="./app/img/icons/delete.png" alt="delete from the queue" height="20" width="20"></div>
+            <div>As you like it</div>
+            <div>$ 15 USD</div>
+            <div class="flex flex-align-center">
+                <img src="./app/img/icons/delete.png" alt="delete from the queue" height="20" width="20">
+            </div>
         </div>
 
     </div>
