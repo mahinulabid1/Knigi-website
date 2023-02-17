@@ -4,6 +4,9 @@ let mobile_navClose: any = document.getElementById("close-nav-in-ham");
 let shopButton: any = document.querySelector(".shop-btn");
 let bookShopNav: any = document.querySelector(".book-shop-separate");
 let bookShopnavClose: any = document.querySelector(".empty-space-close");
+let cartOpen:any=document.querySelectorAll("#cart-open");
+let cartMenu:any= document.querySelector(".cart-holder");
+let cartClose:any = document.getElementById("cart-close");
 let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
 // mobile navigation bar 
 (() => {
@@ -84,6 +87,19 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
 })();
 
 
+
+// cart function
 (()=>{
+    for(let i=0; i < cartOpen.length; i++){
+        cartOpen[i].addEventListener("click",()=>{
+            cartMenu.classList.remove("d-none");
+            console.info("cart button clicked");
+        });
+    }
+
+    cartClose.addEventListener('click', ()=>{
+        cartMenu.classList.add("d-none");
+    });
+
     
 })();

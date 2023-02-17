@@ -18,8 +18,8 @@
     <div class="flex flex-s-b flex-align-center">
         <!-- search icon class -->
         <div class="search-icon"><img src="./app/img/icons/search.png" alt="search anything" height="20" width="20"></div>
-        <div class="cart-btn cart-text-responsive">CART</div>
-        <div class="cart-btn cart-icon"><img src="./app/img/icons/cart.png" alt="Shopping Cart" height="20" width="20"></div>
+        <div class="cart-btn cart-text-responsive" id="cart-open">CART</div>
+        <div class="cart-btn cart-icon" id="cart-open"><img src="./app/img/icons/cart.png" alt="Shopping Cart" height="20" width="20"></div>
     </div>
 </nav>
 
@@ -128,10 +128,10 @@
 
 
 <!-- +++++++ CART HOLDER  ++++++++++++++++++-->
-<div class="cart-holder "> <!-- d-none class will be here -->
+<div class="cart-holder d-none"> <!-- d-none class will be here -->
     <div class="flex flex-s-b search-box">
         <div>Your Cart <span>$35 USD</span></div>
-        <div><img src="./app/img/icons/close.png" alt="" height="20" width="20"></div>
+        <div id="cart-close"><img src="./app/img/icons/close.png" alt="" height="20" width="20"></div>
     </div>
 
     <div class="items-in-cart-container">

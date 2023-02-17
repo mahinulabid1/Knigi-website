@@ -5,6 +5,9 @@ let mobile_navClose = document.getElementById("close-nav-in-ham");
 let shopButton = document.querySelector(".shop-btn");
 let bookShopNav = document.querySelector(".book-shop-separate");
 let bookShopnavClose = document.querySelector(".empty-space-close");
+let cartOpen = document.querySelectorAll("#cart-open");
+let cartMenu = document.querySelector(".cart-holder");
+let cartClose = document.getElementById("cart-close");
 let classAnimation = ["slideDown", "slideUp", "d-none"];
 (() => {
     hambar.addEventListener("click", () => {
@@ -66,5 +69,14 @@ let classAnimation = ["slideDown", "slideUp", "d-none"];
     });
 })();
 (() => {
+    for (let i = 0; i < cartOpen.length; i++) {
+        cartOpen[i].addEventListener("click", () => {
+            cartMenu.classList.remove("d-none");
+            console.info("cart button clicked");
+        });
+    }
+    cartClose.addEventListener('click', () => {
+        cartMenu.classList.add("d-none");
+    });
 })();
 //# sourceMappingURL=script.js.map
