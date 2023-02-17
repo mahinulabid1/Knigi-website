@@ -110,7 +110,7 @@
 
 
 <!--++++++++++++ SEARCH ENGINE(just kidding) ++++++++++++++++++++++  -->
-<div class="search-display ">
+<div class="search-display d-none">
 
     <!-- text container div -->
     <div>

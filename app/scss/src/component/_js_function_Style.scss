@@ -233,42 +233,56 @@ JS FUNCTIONS STYLE
         position: absolute;
         width: 650px;
         @include centering(50%, center_);
-
+        @include responsive(700px){ 
+            width: 100%;
+            padding : 0 20px;
+        }
+        @include responsive(500px){
+            flex-direction:column;
+        }
+        
         form {
             input {
-                // border-top-style: hidden;
-                // border-right-style: hidden;
-                // border-left-style: hidden;
-                // border-bottom-style: hidden;
                 border-style: hidden;
                 background-color: #eee;
-                font-size: 30px;
+                font-size: 25px;
                 padding:0 20px;
                 border-radius:20px;
                 height: 80px;
                 color: rgba(0, 0, 0, 0.493);
                 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.123);
-                width: 500px;
+                width: 80%;
+                margin-bottom: 20px;
+                @include responsive(600px){
+                    font-size: 20px;
+                }
+                @include responsive(500px){
+                    width:100%;
+                }
 
                 &:focus {
                     outline: none;
                 }
             }
-
+            
+            // search button
             button {
                 border:none;
                 border-radius: 50%;
-                color: green;
                 line-height: 80px;
                 width: 80px;
                 font-size: 20px;
+                margin-bottom: 20px;
                 cursor: pointer;
+                @include responsive(500px){
+                    width:100%;
+                    border-radius:20px;
+                }
             }
 
 
-            // search bar close indication
+            // search bar close indication; not cross button
             p {
-                margin-top: 20px;
                 font-weight: 700;
                 letter-spacing: 3px;
                 padding: 0 20px;
@@ -281,8 +295,12 @@ JS FUNCTIONS STYLE
             }
 
         }
+
+               
+
     }
 
+    // CROSS BUTTON
     & >div:last-child{
         height:40px;
         width:40px;
@@ -290,53 +308,11 @@ JS FUNCTIONS STYLE
         background:rgba(0, 0, 0, 0.205);
         position:absolute;
         top:3%;
-        right: 10px;
+        right: 30px;
         cursor:pointer;
+        
     }
 }
-
-// .s-d-text-container{
-
-// }
-
-// .search-display-flex-container {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-// }
-
-// .search-bar {
-
-// }
-
-// .search-bar:focus {
-//     outline: none;
-// }
-
-// .search-submit-btn {
-
-// }
-
-// .search-close-indication {
-
-// }
-
-// .span-search-close {
-
-// }
-
-
-
-// NOT FOUND SUCH CLASS
-// .search-icon-close-display-none {
-//     display: none !important;
-// }
-// .search-icon-close-display-block {
-//     display: block !important;
-//     margin-top: 20px;
-// }
-
-
 
 
 /*==++++++++++++++ CART ++++++++++++++++++++== */
@@ -404,51 +380,6 @@ JS FUNCTIONS STYLE
     }
 }
 
-// .cart {
-//     width: 350px;
-//     height: 80vh;
-//     background: white;
-//     position: relative;
-// }
-
-// .cart-flex-container {
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-// .cross-btn {
-    
-// }
-
-
-
-// .cart-header-info {
-
-// }
-
-// .cart-total-amout {
-    
-// }
-
-// .proceed-to-checkout {
-//     width: 100%;
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     line-height: 60px;
-//     text-align: center;
-//     background: green;
-// }
-
-// .proceed-to-checkout a {
-//     color: white;
-//     letter-spacing: 3px;
-//     font-weight: 700;
-//     font-size: 14px;
-//     width: 100%;
-//     display: block;
-
-// }
 
 .items-in-cart-container{
     &>div{
@@ -468,55 +399,3 @@ JS FUNCTIONS STYLE
     }
 }
 
-// .items-in-cart {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 0 15px;
-//     margin-bottom: 20px;
-//     background: rgba(0, 0, 0, 0.185);
-//     line-height: 40px;
-// }
-
-
-
-/* ===============
-RESPONSIVE MEDIA QUERIES
-====================== */
-/* BIG SCREEN FIX */
-@media all and (min-width: 1700px) {
-
-    /* shopall.css */
-    // .product-name {
-    //     font-size: 24px;
-    // }
-
-    // .product-price {
-    //     font-size: 21px;
-    // }
-
-
-    /* search icon fix */
-    // .search-icon-close-display-block {
-    //     margin-top: 30px;
-    // }
-
-    /* navigation ham menu fix */
-
-
-    /* woven hover section */
-    // .b-s-product-text {
-    //     font-size: 22px;
-    // }
-
-    // .b-s-product-text:nth-of-type(2) {
-    //     font-size: 18px;
-    // }
-
-    // .bs-container {
-    //     height: 600px;
-    // }
-
-    // .b-s-image-container img {
-    //     height: 280px;
-    // }
-}
