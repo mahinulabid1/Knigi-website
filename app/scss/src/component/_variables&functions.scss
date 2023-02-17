@@ -1,6 +1,14 @@
 // VARIABLE
 $text-black: rgb(32, 32, 32);
 
+@mixin transition-normal($t-what){
+    transition: $t-what 0.4s;
+        -webkit-transition: $t-what 0.4s;
+        -moz-transition: $t-what 0.4s;
+        -ms-transition: $t-what 0.4s;
+        -o-transition: $t-what 0.4s;
+}
+
 // mixin
 @mixin centering($percent, $centering_spec){
     @if $centering_spec == horizontal_{

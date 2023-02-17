@@ -53,6 +53,7 @@ let classAnimation = ["slideDown", "slideUp", "d-none"];
         }, 500);
     });
     selectorArr[1].addEventListener("mouseenter", () => {
+        console.log("shop nav close");
         setTimeout(() => {
             if (duration > 200) {
                 bookShopNav.classList.add("slideUp");
@@ -63,5 +64,7 @@ let classAnimation = ["slideDown", "slideUp", "d-none"];
             }
         }, 300);
     });
+})();
+(() => {
 })();
 //# sourceMappingURL=script.js.map

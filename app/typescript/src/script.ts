@@ -28,50 +28,9 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
 
 
 
-// shop menu
-// (() => {
-
-//     let startTime: any;
-//     let endTime: any;
-//     let hoverTime: number;
-
-//     shopButton.addEventListener("mouseenter", function () {
-//         startTime = Date.now();
-//         let x = setInterval(() => {
-//             console.info("interval X is running");
-//             endTime = Date.now();
-//             hoverTime = endTime - startTime;
-//             if (hoverTime > 400) {
-//                 console.log("menu open");
-//                 bookShopNav.classList.remove('d-none');
-//                 bookShopNav.classList.remove("slideUp");
-//                 bookShopNav.classList.add("slideDown");
-//                 clearInterval(x);
-//             }
-//         }, 100);
-//     });
-
-//     bookShopnavClose.addEventListener("mouseenter", function () {
-//         startTime = Date.now();
-//         let x = setInterval(() => {
-//             console.info("interval X is running");
-//             endTime = Date.now();
-//             hoverTime = endTime - startTime;
-//             if (hoverTime > 400) {
-//                 console.log("menu open");
-
-//                 bookShopNav.classList.add("slideUp");
-//                 bookShopNav.classList.remove("slideDown");
-//                 bookShopNav.classList.add('d-none');
-//                 clearInterval(x); 
-//             }
-//         }, 100);
-//         console.log(hoverTime + "menu close");
-//     });
-// })();
 
 
-
+// shop menu open and close
 (() => {
     // I want duration
     let duration: number = 0;
@@ -107,6 +66,7 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
     });
 
     selectorArr[1].addEventListener("mouseenter", () => {
+        console.log("shop nav close");
         setTimeout(()=>{
 
             if (duration > 200) {
@@ -121,6 +81,9 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
        
     });
 
+})();
 
 
+(()=>{
+    
 })();

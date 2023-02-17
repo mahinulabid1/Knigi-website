@@ -4,90 +4,109 @@
 
 
 
-nav{
+nav {
     @extend .bound-navigation, .flex-wrap, .flex, .flex-align-center, .flex-s-b;
     background: white;
     height: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
-    @include responsive(1000px){
+
+    @include responsive(1000px) {
         height: 70px;
     }
-    a{
-        &:link, 
+
+    a {
+
+        &:link,
         &:visited,
-        &:hover, 
-        &:active{
-            color:black;
-        }  
+        &:hover,
+        &:active {
+            color: black;
+        }
     }
-    .nav-logo{
+
+    .nav-logo {
         font-size: 40px;
-        @include responsive(1000px){
+
+        @include responsive(1000px) {
             font-size: 30px;
         }
     }
 
-    .shop-btn{
+    .shop-btn {
         margin-left: 30px;
         cursor: pointer;
-        img{
-            margin-left:10px;
-        }
-        @include responsive(800px){
-            display:none;
-        }
-    }
-    
-}
 
-.search-icon{
-    margin-top: 5px;
-    margin-right: 20px;
-    @include responsive(1000px){
-        margin-top:0;
+        img {
+            margin-left: 10px;
+        }
+
+        @include responsive(800px) {
+            display: none;
+        }
     }
+
 }
 
 
 
 
-.dekstop-ham-container{
-    margin-top:-6px;
-    cursor:pointer;
 
-    .dekstop-ham-relative{
-        position:relative;
+.dekstop-ham-container {
+    margin-top: -6px;
+    cursor: pointer;
+    height: 40px;
+
+    .dekstop-ham-relative {
+        position: relative;
         @include centering(50%, vertical_);
-    
-        div{
+
+        div {
             // desktop hambar
             height: 2px;
             width: 25px;
-            margin-left:auto;
-            margin-right:auto;
+            margin-left: auto;
+            margin-right: auto;
             background: black;
-            &:not(:last-of-type){
-                margin-bottom:7px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 7px;
             }
-            &:first-of-type{
-                margin-top:3px;
+
+            &:first-of-type {
+                margin-top: 3px;
             }
         }
     }
 }
 
-.cart-icon{
-    display: none;
-    @include responsive(800px){
-        display:block;
+
+// icon 
+nav{
+    .search-icon{
+        margin-top: 5px;
+        margin-right: 20px;
+        cursor:pointer;
+        @include responsive(1000px){
+            margin-top:0;
+        }
+    }
+
+    .cart-icon {
+        display: none;
+    
+        @include responsive(800px) {
+            display: block;
+        }
+    }
+
+    @include responsive(800px) {
+        .cart-text-responsive {
+            display: none;
+        }
     }
 }
 
-@include responsive(800px){
-    .cart-text-responsive{
-        display: none;
-    }
-}
+
 
 
 
