@@ -1,13 +1,16 @@
-let hambar: any = document.querySelector(".dekstop-ham-container");
-let mobile_navigation: any = document.querySelector(".nav-in-ham");
-let mobile_navClose: any = document.getElementById("close-nav-in-ham");
-let shopButton: any = document.querySelector(".shop-btn");
-let bookShopNav: any = document.querySelector(".book-shop-separate");
-let bookShopnavClose: any = document.querySelector(".empty-space-close");
-let cartOpen:any=document.querySelectorAll("#cart-open");
-let cartMenu:any= document.querySelector(".cart-holder");
-let cartClose:any = document.getElementById("cart-close");
-let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
+const hambar: any = document.querySelector(".dekstop-ham-container");
+const mobile_navigation: any = document.querySelector(".nav-in-ham");
+const mobile_navClose: any = document.getElementById("close-nav-in-ham");
+const shopButton: any = document.querySelector(".shop-btn");
+const bookShopNav: any = document.querySelector(".book-shop-separate");
+const bookShopnavClose: any = document.querySelector(".empty-space-close");
+const cartOpen:any=document.querySelectorAll("#cart-open");
+const cartMenu:any= document.querySelector(".cart-holder");
+const cartClose:any = document.getElementById("cart-close");
+const searchOpenBtn:any = document.querySelector(".search-icon");
+const searchCloseBtn:any =document.querySelector(".search-close-btn");
+const searchSection:any = document.querySelector(".search-display");
+const classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
 // mobile navigation bar 
 (() => {
 
@@ -88,7 +91,7 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
 
 
 
-// cart function
+// CART BUTTON FUNCTION
 (()=>{
     for(let i=0; i < cartOpen.length; i++){
         cartOpen[i].addEventListener("click",()=>{
@@ -100,6 +103,53 @@ let classAnimation: string[] = ["slideDown", "slideUp", "d-none"];
     cartClose.addEventListener('click', ()=>{
         cartMenu.classList.add("d-none");
     });
+
+    
+})();
+
+
+// SEARCH FUNCTIONALITIES
+(()=>{
+    // REUSEABLE SEARCHBAR OPEN AND CLOSE OPERATION
+    const searchSectionOperation =(op:string):void=>{
+        if(op == "open"){
+            for(let i =0; i <classAnimation.length; i++){
+                if(i == 0){
+                    searchSection.classList.add(classAnimation[i]);
+                }else{
+                    searchSection.classList.remove(classAnimation[i]);
+                }
+            }
+            
+        }else if(op == "close"){
+            for(let i =0; i <classAnimation.length; i++){
+                if(i == 0){
+                    searchSection.classList.remove(classAnimation[i]);
+                }else if(i ==1){
+                    searchSection.classList.add(classAnimation[i]);
+                }else if(i ==2){
+                    setTimeout(()=>{
+                        searchSection.classList.add(classAnimation[i]);
+                    }, 380)
+                }
+            }
+        }  
+    }
+    searchOpenBtn.addEventListener("click",()=>{
+        searchSectionOperation("open");
+    });
+
+    window.addEventListener("keydown", (event)=>{
+        if(event.key== "Escape"){
+            searchSectionOperation("close");
+        }
+    });
+
+    searchCloseBtn.addEventListener("click", ()=>{
+        searchSectionOperation("close");
+    }); 
+
+
 
     
 })();

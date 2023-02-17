@@ -218,7 +218,7 @@ JS FUNCTIONS STYLE
 }
 
 
-/* == SEARCH BAR == */
+/* ==++++++++++++++++++++++++ SEARCH BAR +++++++++++++++++== */
 .search-display {
     position: fixed;
     top: 0;
@@ -229,20 +229,25 @@ JS FUNCTIONS STYLE
     z-index: 10;
 
     // text container
-    &>div {
+    &>div:first-child {
         position: absolute;
         width: 650px;
+        @include centering(50%, center_);
 
         form {
             input {
-                border-top-style: hidden;
-                border-right-style: hidden;
-                border-left-style: hidden;
-                border-bottom-style: hidden;
+                // border-top-style: hidden;
+                // border-right-style: hidden;
+                // border-left-style: hidden;
+                // border-bottom-style: hidden;
+                border-style: hidden;
                 background-color: #eee;
-                font-size: 40px;
-                height: 60px;
+                font-size: 30px;
+                padding:0 20px;
+                border-radius:20px;
+                height: 80px;
                 color: rgba(0, 0, 0, 0.493);
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.123);
                 width: 500px;
 
                 &:focus {
@@ -251,10 +256,11 @@ JS FUNCTIONS STYLE
             }
 
             button {
-                border: 2px solid green;
+                border:none;
+                border-radius: 50%;
                 color: green;
-                line-height: 60px;
-                width: 50px;
+                line-height: 80px;
+                width: 80px;
                 font-size: 20px;
                 cursor: pointer;
             }
@@ -275,6 +281,17 @@ JS FUNCTIONS STYLE
             }
 
         }
+    }
+
+    & >div:last-child{
+        height:40px;
+        width:40px;
+        border-radius: 50%;
+        background:rgba(0, 0, 0, 0.205);
+        position:absolute;
+        top:3%;
+        right: 10px;
+        cursor:pointer;
     }
 }
 

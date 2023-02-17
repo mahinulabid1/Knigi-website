@@ -109,8 +109,8 @@
 
 
 
-
-<div class="search-display d-none">
+<!--++++++++++++ SEARCH ENGINE(just kidding) ++++++++++++++++++++++  -->
+<div class="search-display ">
 
     <!-- text container div -->
     <div>
@@ -122,6 +122,10 @@
 
             <p>PRESS <span>[ESC]</span> TO CLOSE</p>
         </form>
+    </div>
+
+    <div class="search-close-btn flex flex-align-center flex-s-a">
+        <img src="./app/img/icons/close.png" alt="" height="20" width="20">
     </div>
 </div>
 
