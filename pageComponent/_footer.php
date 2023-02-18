@@ -6,3 +6,5 @@
     <div><a href="./termsandCondition.php">Terms & Conditions</a> </div>
     <div class= "copyright-text">© WOVEN 2021</div>
 </footer>
+
+<script src="./app/typescript/dist/script.js"></script>
