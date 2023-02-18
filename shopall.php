@@ -147,7 +147,5 @@ include $head;
     include $footer; 
     ?>
 
-    <script src="./app/js/script.js"></script>
-    <script src="./app/js/shopall.js"></script>
 </body>
 </html>

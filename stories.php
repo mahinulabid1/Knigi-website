@@ -61,7 +61,6 @@ include "./pageComponent/variableNDPath.php";
 
 
     <?php include $footer; ?>
-    <script src="./app/js/script.js"></script>
 </body>
 
 </html>

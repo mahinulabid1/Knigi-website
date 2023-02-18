@@ -17,8 +17,7 @@ include "./pageComponent/_head.php";
     include "./pageComponent/_blogPost_summary.php";
     include "./pageComponent/_footer.php" 
     ?>
-
-    <script src="./app/js/script.js"></script>
+    
 </body>
 
 </html>

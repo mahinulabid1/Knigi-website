@@ -97,6 +97,6 @@ include "./pageComponent/_head.php";
 
     <?php include "./pageComponent/_footer.php"; ?>
 
-    <script src="./app/js/script.js"></script>
+    
 </body>
 </html>

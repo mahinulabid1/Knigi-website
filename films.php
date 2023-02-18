@@ -16,6 +16,6 @@ include $head;
     </section>
 
     <?php include $footer; ?>
-    <script src="./app/js/script.js"></script>
+    
 </body>
 </html>

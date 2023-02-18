@@ -63,7 +63,5 @@ include $head;
 
 <?php include $footer; ?>
 
-<script src="./app/js/script.js"></script>
-<script src="./app/js/productDescription.js"></script>
 </body>
 </html>
