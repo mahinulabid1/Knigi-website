@@ -17,7 +17,7 @@ include "./pageComponent/_head.php";
         
         <div class="hero-text-container">
             <h1>Buy Books, Anywhere</h1>
-            <a href="./shopall.html">Shop Now</a>
+            <a href="./shopall.php">Shop Now</a>
         </div>
 
     </header>

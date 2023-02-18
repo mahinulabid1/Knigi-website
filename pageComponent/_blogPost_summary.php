@@ -43,5 +43,5 @@
             </div>
 
         </div>
-        <div class="visit-blog-btn"><a href="./allBlogs.html">Visit blog</a></div>
+        <div class="visit-blog-btn"><a href="./allBlogs.php">Visit blog</a></div>
     </section>

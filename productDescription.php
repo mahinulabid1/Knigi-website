@@ -53,7 +53,7 @@ include $head;
         </div>
         <div class="specs-item">
             <h3 class="specs-item-header">SHIPPING & HANDLING</h3>
-            <p class="specs-content-1">Shipping & handling is added at checkout. For more information please visit our <a href="./FAQ.html" class="faq-link">FAQ</a> and <a href="./termsandCondition.html" class="terms-and-condition">Terms & Conditions.</a></p>
+            <p class="specs-content-1">Shipping & handling is added at checkout. For more information please visit our <a href="./FAQ.php" class="faq-link">FAQ</a> and <a href="./termsandCondition.php" class="terms-and-condition">Terms & Conditions.</a></p>
         </div>
     </div>
     <a href="" class="subscribe-btn transition">Subscribe to print <i class="fas fa-arrow-right"></i></a>

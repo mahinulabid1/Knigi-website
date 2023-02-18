@@ -49,7 +49,7 @@
 <!-- START -->
 <div class="book-shop-separate d-none slideUp">
     <div class="bs-container flex flex-wrap flex-s-a">
-        <a href="./productDescription.html" class="b-s-item">
+        <a href="./productDescription.php" class="b-s-item">
             <div class="b-s-image-container">
                 <img class="" src="./app/img/product/individual/product1.jpg" alt="">
                 <div>
@@ -60,7 +60,7 @@
 
         </a>
 
-        <a href="./productDescription.html" class="b-s-item">
+        <a href="./productDescription.php" class="b-s-item">
             <div class="b-s-image-container">
                 <img class="" src="./app/img/product/individual/product2.jpg" alt="">
                 <div>
@@ -71,7 +71,7 @@
 
         </a>
 
-        <a href="./productDescription.html" class="b-s-item">
+        <a href="./productDescription.php" class="b-s-item">
             <div class="b-s-image-container">
                 <img class="" src="./app/img/product/individual/product3.jpg" alt="">
                 <div>
@@ -82,7 +82,7 @@
 
         </a>
 
-        <a href="./productDescription.html" class="b-s-item">
+        <a href="./productDescription.php" class="b-s-item">
             <div class="b-s-image-container">
                 <img class="" src="./app/img/product/individual/product4.jpg" alt="">
                 <div>
@@ -94,7 +94,7 @@
         </a>
 
     </div>
-    <a class="shop-btn-shop-all-link transition" href="./shopall.html">SHOP ALL <i style="padding-left: 20px;" class="fas fa-chevron-right"></i></a>
+    <a class="shop-btn-shop-all-link transition" href="./shopall.php">SHOP ALL <i style="padding-left: 20px;" class="fas fa-chevron-right"></i></a>
 
 
 
